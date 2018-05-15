@@ -1,0 +1,126 @@
+html {
+  background-color: #eeeeee;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 90vh;
+  font-size: 1.5em;
+  font-family: 'Signika', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+form.form {
+  background-color: #FFFFFF;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 50%;
+  padding: 30px;
+}
+h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+input{
+  outline: none;
+}
+input.champs {
+  padding: 10px;
+  width: 200px;
+}
+input.btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: 1.5px solid #3cbde4;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+  color: #3cbde4;
+}
+input.btn:hover {
+  background-color: #3cbde4;
+  color:white;
+  transition-duration: 0.3s;
+}
+main {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 40px 0;
+}
+article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 33.33%;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+article:hover {
+  background: whitesmoke;
+  cursor: pointer;
+}
+article img {
+  width: 200px;
+}
+article h2 {
+}
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.choix{
+}
+.choix .choixmulti{
+  height: 300px;
+  width: 300px;
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 5px;
+  background-image: url(../romain.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #eee;
+}
+.choix .choixmulti.choix2{
+  background-image: url(../alb.jpg);
+}
+.choix .choixmulti:hover{
+  border: 3px solid #3cbde4;
+  cursor: pointer;
+}
+.choix .choixmulti.choix3{
+  background-image: url(../hugo.jpg);
+}
+
+
+@media screen and (max-width: 600px) {
+  article {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

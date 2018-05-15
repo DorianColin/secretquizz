@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///Users/doriancolin/Desktop/Dorian%20portfolio/work.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Salut c'est cool</title>
+	<link rel="stylesheet" type="text/css" href="./Salut c&#39;est cool_files/screen.css">
+	<script src="./Salut c&#39;est cool_files/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="./Salut c&#39;est cool_files/parallax.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="">
+	<div class="menu">
+		<ul>
+			<a href="file:///Users/doriancolin/Desktop/Dorian%20portfolio/work.html#"><li>Home</li></a>
+			<a href="file:///Users/doriancolin/Desktop/Dorian%20portfolio/work.html#"><li>Work</li></a>
+			<a href="file:///Users/doriancolin/Desktop/Dorian%20portfolio/work.html#"><li>About</li></a>
+			<a href="file:///Users/doriancolin/Desktop/Dorian%20portfolio/work.html#"><li>Contact</li></a>
+		</ul>
+	</div>
+	<header>
+		<nav>
+			<a href="file:///Users/doriancolin/Desktop/Dorian%20portfolio/index.html"><h1>Dorian Colin</h1></a>
+			<div class="burger-btn">
+				<div class="bar bar1"></div>
+				<div class="bar bar2"></div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<section class="works">
+			<div class="works-left">
+				<div class="project">
+					<img src="file:///Users/doriancolin/Desktop/Dorian%20portfolio/assets/img/data.png">
+				</div>
+			</div>
+		</section>
+
+		<div class="txt-view-more">
+			<h3>Me contacter</h3>
+			<div class="button"><p>Say Hello</p></div>
+		</div>
+		<div class="social">
+			<div class="item item1"></div>
+			<div class="item item2"></div>
+			<div class="item item3"></div>
+<!-- 			<img src="assets/img/insta.png" alt="">
+			<img src="assets/img/facebook.png" alt="">
+			<img src="assets/img/twitter.png" alt=""> -->
+		</div>
+		<footer><p></p></footer>
+
+
+
+	</div>
+
+<script type="text/javascript">
+	const items = [
+	  "",
+	]
+	const write = document.getElementById('write')
+	let count = 0
+	let index = 0
+	let typingEffect = () => {
+	  let text = items[index]
+	  if (count < text.length) {
+	    setTimeout(() => {
+	      write.innerHTML += text[count]
+	      count++
+	      typingEffect()
+	    }, Math.floor(Math.random(10) * 200))
+	  } else {
+	    count = 0;
+	    index = (index + 1 < items.length) ? index + 1 : 0
+	    setTimeout(() => {
+	      write.innerHTML = ''
+	      typingEffect()
+	    }, 30000)
+	  }
+	}
+
+	typingEffect()
+</script>
+</body></html>
